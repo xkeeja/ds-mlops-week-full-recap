@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "salaries"
+version = "0.0.1"
+authors = [
+  { name="Roger" },
+]
+description = "Salary prediction package"
+requires-python = ">=3.10"
+dependencies = [
+  'pip>=23',
+  'ipykernel',
+  'notebook',
+  'numpy',
+  'pandas',
+  'matplotlib',
+  'seaborn'
+]
