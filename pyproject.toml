@@ -17,5 +17,18 @@ dependencies = [
   'numpy',
   'pandas',
   'matplotlib',
-  'seaborn'
+  'seaborn',
+  'scikit-learn',
+  'google-cloud-storage',
+  'fastapi',
+  'uvicorn'
+]
+
+[project.optional-dependencies]
+amd64 = [
+    'tensorflow==2.10.0'
+]
+
+m1 = [
+    'tensorflow-macos==2.10.0'
 ]
