@@ -6,9 +6,11 @@ create_venv:
 	pyenv local mlops-recap
 
 install_amd64:
+	pip install --upgrade pip
 	pip install -e '.[amd64]'
 
 install_m1:
+	pip install --upgrade pip
 	pip install -e '.[m1]'
 
 run_api:
