@@ -2,9 +2,9 @@ FROM python:3.10.6-buster
 
 COPY pyproject.toml pyproject.toml
 COPY models models
-COPY salaries/fastapi salaries/fastapi
+COPY solution/fastapi solution/fastapi
 COPY Makefile Makefile
 
 RUN make install_amd64
 
-CMD uvicorn salaries.fastapi.fastapi:app --host 0.0.0.0 --port $PORT
+CMD uvicorn solution.fastapi.fastapi:app --host 0.0.0.0 --port $PORT
