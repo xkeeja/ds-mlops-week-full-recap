@@ -1,3 +1,6 @@
+clear_remote:
+	git remote remove origin
+
 create_venv:
 	pyenv virtualenv 3.10.6 mlops-recap
 	pyenv local mlops-recap
